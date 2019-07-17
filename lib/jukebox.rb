@@ -10,8 +10,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
-  songs.each do |song|
-    binding.pry
+  songs.each do { |song| if song.include?(user_input) }
+    
   end
 end
 
