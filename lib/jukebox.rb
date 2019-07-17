@@ -13,11 +13,11 @@ def play(songs)
   
 end
 
-def list(song_list)
+def list(songs)
   index = 0
   number = 1
-  until index == song_list.length
-    puts "#{number}. #{song_list[index]}"
+  until index == songs.length
+    puts "#{number}. #{songs[index]}"
     index += 1
     number += 1
   end
