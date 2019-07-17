@@ -20,13 +20,9 @@ def play(songs)
   end 
 end
 
-def list(songs)
-  index = 0
-  number = 1
-  until index == songs.length
-    puts "#{number.to_i}. #{songs[index]}"
-    index += 1
-    number += 1
+def list(my_songs)
+  my_songs.each_with_index do |song, index|
+    puts "#{index+1}. #{song}"
   end
 end
 
