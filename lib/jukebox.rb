@@ -38,26 +38,26 @@ end
 def run(my_songs)
   help
   puts "Please enter a command:"
-  gets.chomp
+  user_input = gets.chomp
   
   while user_input != "exit"
     if user_input == "list"
       list(my_songs)
       puts "Please enter a command:"
-      gets.chomp
+      user_input = gets.chomp
     elsif user_input == "play"
       play(my_songs)
       puts "Please enter a command:"
-      gets.chomp
+      user_input = gets.chomp
     elsif user_input == "help"
       help
       puts "Please enter a command:"
-      gets.chomp
+      user_input = gets.chomp
     else
       puts "Invalid command"
       help
       puts "Please enter a command:"
-  gets.chomp
+      user_input = gets.chomp
     end
   end
   
