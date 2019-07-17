@@ -7,18 +7,18 @@ def help
   puts "- exit : exits the program"
 end
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  user_input = gets.chomp
-  songs.each do |song| 
-    if song.include?(user_input)
-      puts "Playing #{song}"
-    end
-  end
-  if !songs.include?(user_input)
-    puts "Invalid input, please try again"
-  end 
-end
+# def play(songs)
+#   puts "Please enter a song name or number:"
+#   user_input = gets.chomp
+#   songs.each do |song| 
+#     if song.include?(user_input)
+#       puts "Playing #{song}"
+#     end
+#   end
+#   if !songs.include?(user_input)
+#     puts "Invalid input, please try again"
+#   end 
+# end
 
 
 def play(my_songs)
