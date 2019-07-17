@@ -11,7 +11,10 @@ end
   
 # end
 
-def list
+def list(song_list)
+  song_list.each do |song|
+    binding.pry
+  end
   
 end
 
