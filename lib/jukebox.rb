@@ -7,9 +7,9 @@ def help
   puts "- exit : exits the program"
 end
 
-# def play
+def play
   
-# end
+end
 
 def list(song_list)
   index = 0
