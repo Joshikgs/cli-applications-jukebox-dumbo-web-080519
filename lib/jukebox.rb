@@ -12,7 +12,13 @@ end
 # end
 
 def list(song_list)
-  puts "#{song_list}"
+  index = 0
+  number = 1
+  until number == song_list.length
+    puts "#{number}. #{song_list}"
+    index += 1
+    number += 1
+  end
 end
 
 
