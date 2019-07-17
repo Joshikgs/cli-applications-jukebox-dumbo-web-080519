@@ -13,10 +13,9 @@ def play(songs)
   songs.each do |song| 
     if song.include?(user_input)
       puts "Playing #{song}"
+    else
+      puts "Invalid input, please try again"
     end
-  end
-  if !song.include?(user_input)
-    puts "Invalid input, please try again"
   end
 end
 
