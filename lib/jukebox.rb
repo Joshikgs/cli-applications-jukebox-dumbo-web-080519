@@ -21,7 +21,6 @@ def list(song_list)
   end
 end
 
-
 def exit_jukebox
   puts "Goodbye"
 end
