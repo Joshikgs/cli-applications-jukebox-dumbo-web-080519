@@ -2,5 +2,7 @@
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
-  puts "- "
+  puts "- list :"
+  puts "- play :"
+  puts "- exit :"
 end
