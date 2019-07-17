@@ -14,8 +14,7 @@ end
 def list(song_list)
   puts "#{song_list}"
 end
-  
-end
+
 
 def exit_jukebox
   puts "Goodbye"
