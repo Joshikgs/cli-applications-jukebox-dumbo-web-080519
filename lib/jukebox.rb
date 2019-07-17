@@ -29,33 +29,31 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-
+def enter_command
+  puts "Please enter a command:"
+  user_input = gets.chomp
+end
 
 
 
 def run(songs)
   help
-  puts "Please enter a command:"
-  user_input = gets.chomp
+  enter_command
   
   while user_input != "exit"
     if user_input == "list"
       list(songs)
-      puts "Please enter a command:"
-      user_input = gets.chomp
+      enter_command
     elsif user_input == "play"
       play(songs)
-      puts "Please enter a command:"
-      user_input = gets.chomp
+      enter_command
     elsif user_input == "help"
       help
-      puts "Please enter a command:"
-      user_input = gets.chomp
+      enter_command
     else
       puts "Invalid command"
       help
-      puts "Please enter a command:"
-      user_input = gets.chomp
+      enter_command
     end
   end
   
