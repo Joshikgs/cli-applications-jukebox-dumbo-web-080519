@@ -22,3 +22,7 @@ def list
   puts "8. Harry Chapin - Cats in the Cradle"
   puts "9. Amos Lee - Keep It Loose, Keep It Tight"
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
