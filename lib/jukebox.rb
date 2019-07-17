@@ -12,8 +12,8 @@ end
 # end
 
 def list(song_list)
-  
-  end
+  puts "#{song_list}"
+end
   
 end
 
