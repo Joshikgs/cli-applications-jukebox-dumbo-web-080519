@@ -31,29 +31,34 @@ end
 
 def enter_command
   puts "Please enter a command:"
-  gets.chomp
+  user_input = gets.chomp
 end
 
 
 
 def run(songs)
   help
-  user_input = enter_command
+  puts "Please enter a command:"
+  user_input = gets.chomp
   
   while user_input != "exit"
     if user_input == "list"
       list(songs)
-      user_input = enter_command
+      puts "Please enter a command:"
+      user_input = gets.chomp
     elsif user_input == "play"
       play(songs)
-      user_input = enter_command
+      puts "Please enter a command:"
+      user_input = gets.chomp
     elsif user_input == "help"
       help
-      user_input = enter_command
+      puts "Please enter a command:"
+      user_input = gets.chomp
     else
       puts "Invalid command"
       help
-      user_input = enter_command
+      puts "Please enter a command:"
+      user_input = gets.chomp
     end
   end
   
