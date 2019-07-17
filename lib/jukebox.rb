@@ -12,8 +12,10 @@ end
 # end
 
 def list(song_list)
+  count = 0
   song_list.each do |song|
-    
+    puts "#{song_list[count]}"
+    count += 1
   end
   
 end
