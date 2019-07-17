@@ -21,7 +21,7 @@ def list(songs)
   index = 0
   number = 1
   until index == songs.length
-    puts "#{number}. #{songs[index]}"
+    puts "#{number.to_i}. #{songs[index]}"
     index += 1
     number += 1
   end
